@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eV3-PX-nES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PriceCrypto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BITCOIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kE-2X-MDu">
+                                <rect key="frame" x="157" y="433" width="100" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="btc_price_usd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnU-B2-DWY">
+                                <rect key="frame" x="105.5" y="518" width="203" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin-big" translatesAutoresizingMaskIntoConstraints="NO" id="hqe-c4-l28">
+                                <rect key="frame" x="87" y="142" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Sxe-aE-Prs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="Vyy-PU-KC9"/>
+                                    <constraint firstAttribute="height" constant="240" id="XGZ-rC-Y12"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="rHp-NV-pnZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date_clock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksh-Cs-bhY">
+                                <rect key="frame" x="167.5" y="473" width="79.5" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="YJI-3Q-mEv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="ksh-Cs-bhY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ap-Cn-WHb"/>
+                            <constraint firstItem="hqe-c4-l28" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="MsN-5Z-Br8"/>
+                            <constraint firstItem="0kE-2X-MDu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="O3k-uC-rgi"/>
+                            <constraint firstItem="YnU-B2-DWY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SKM-iu-SsB"/>
+                            <constraint firstItem="hqe-c4-l28" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cWz-xy-DhU"/>
+                            <constraint firstItem="0kE-2X-MDu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ke2-Cs-otK"/>
+                            <constraint firstItem="ksh-Cs-bhY" firstAttribute="top" secondItem="0kE-2X-MDu" secondAttribute="bottom" constant="10" id="nmo-FI-SGI"/>
+                            <constraint firstItem="hqe-c4-l28" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="sVn-vx-llA"/>
+                            <constraint firstItem="YnU-B2-DWY" firstAttribute="top" secondItem="ksh-Cs-bhY" secondAttribute="bottom" constant="20" id="zYf-CS-L3O"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qO5-5h-WoI"/>
+                    <connections>
+                        <outlet property="dcLabel" destination="ksh-Cs-bhY" id="QhO-qs-JWn"/>
+                        <outlet property="usdLabel" destination="YnU-B2-DWY" id="8Zr-cF-kOC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="515.94202898550725" y="-60.267857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pY3-dh-DsX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eV3-PX-nES" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s1n-0O-IJs">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wps-RA-kLP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HbS-U3-wo5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-312" y="-60"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bitcoin-big" width="800" height="870"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
